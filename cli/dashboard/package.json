@@ -5,9 +5,9 @@
   "description": "Interactive terminal dashboard for Soroban-Registry (blessed + ws).",
   "license": "Apache-2.0",
   "scripts": {
-    "dev": "tsx src/index.ts dashboard",
-    "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js dashboard",
+    "dev": "node init && tsx src/index.ts dashboard",
+    "build": "node init && tsc -p tsconfig.json",
+    "start": "node init && node dist/index.js dashboard",
     "mock:server": "tsx scripts/mock-ws-server.ts"
   },
   "dependencies": {
